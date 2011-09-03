@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+	<head>
+		<meta charset="utf-8" />
+		<title>Boetepot</title>
+	</head>
+	<body>
+		<table>
+			<thead>
+				<tr>
+					<th>Voornaam</th>
+					<th>Achternaam</th>
+					<th>Boetepot</th>
+					<th>Verwijder</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr wicket:id="listview">
+	   				<td><a wicket:id="link"><span wicket:id="firstname"></span></a></td>
+	   				<td><span wicket:id="lastname"></span></td>
+	   				<td>1 Euro</td>
+	   				<td><a wicket:id="deleteLink">Verwijder</a></td>
+	   			</tr>
+   			</tbody>
+		</table>
+		
+		<a wicket:id="addLink">Voeg persoon toe</a>
+	</body>
+</html>
